@@ -1,1 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANH in LHS</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23c2410c'/%3E%3Ctext x='50' y='70' font-size='48' text-anchor='middle' fill='%23fafaf8'%3E%E2%9C%88%EF%B8%8F%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        --bg: #fafaf8;
+        --text: #1c1c1a;
+        --muted: #8a8a86;
+        --accent: #c2410c;
+        --border: #e7e7e3;
+        --card: #ffffff;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: Georgia, "Times New Roman", serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 64px 24px;
+      }
+      header {
+        text-align: center;
+        padding: 32px 0 44px;
+        border-bottom: 1px solid var(--border);
+        margin-bottom: 44px;
+      }
+      .logo {
+        font-size: 2.6rem;
+        letter-spacing: 0.02em;
+        font-weight: 400;
+      }
+      .logo .hl { color: var(--accent); }
+      header p.tag {
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+      section { margin-bottom: 52px; }
+      h2 {
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      /* ---------- Tool cards ---------- */
+      .tools { display: grid; grid-template-columns: 1fr; gap: 16px; }
+      .tool {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 26px 28px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        text-decoration: none;
+        color: var(--text);
+        transition: all 0.15s ease;
+      }
+      .tool:hover { border-color: var(--accent); transform: translateY(-2px); }
+      .tool .emoji { font-size: 2rem; margin-top: 2px; }
+      .tool h3 { font-size: 1.1rem; font-weight: 400; }
+      .tool .desc { color: var(--muted); font-size: 0.88rem; margin-top: 4px; }
+      .tool .go {
+        margin-top: 10px;
+        display: inline-block;
+        color: var(--accent);
+        font-size: 0.85rem;
+      }
+      /* ---------- About ---------- */
+      .about {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 22px 28px;
+        font-size: 0.92rem;
+        color: #44443f;
+      }
+      footer {
+        margin-top: 56px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.78rem;
+        border-top: 1px solid var(--border);
+        padding-top: 24px;
+      }
+      @media (max-width: 480px) {
+        body { padding: 32px 16px; }
+        .logo { font-size: 2rem; }
+        .tool { flex-direction: column; gap: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">ANH <span class="hl">in</span> LHS</div>
+      <p class="tag">Our family's little corner of the internet 🌍</p>
+    </header>
 
+    <!-- ============ FAMILY TOOLS ============ -->
+    <section>
+      <h2>Family Tools</h2>
+      <div class="tools">
+        <a class="tool" href="trip-decider.html">
+          <div class="emoji">🧳</div>
+          <div>
+            <h3>Trip Decider</h3>
+            <div class="desc">
+              Can't agree where to go? Everyone enters their wishes —
+              activity, weather, distance, language — and the decider
+              suggests destinations that match. No more 45-minute
+              "I don't know, what do YOU want?" debates.
+            </div>
+            <span class="go">Try it →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section>
+      <h2>About this site</h2>
+      <div class="about">
+        Built by the family, for the family. Good food, travel, and three
+        languages between us — this is where our tools and stories live.
+        More coming soon… 🍽️ ✈️
+      </div>
+    </section>
+
+    <footer>
+      © 2026 ANH in LHS — Vibe-coded with ❤
+    </footer>
+  </body>
+</html>
